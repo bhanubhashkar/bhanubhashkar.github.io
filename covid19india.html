@@ -5,14 +5,14 @@
 </head>
 <body>
 	<!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 
-<head>
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Bhanu Bhashkar</title>
 
-		<link rel="shortcut icon" href="images/favicon.png">
+        <link rel="shortcut icon" href="images/favicon.png">
 
         <!--Bootstrap Css-->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -56,13 +56,13 @@
             <div class="container">
                 <!-- LOGO -->
                 <a class="navbar-brand logo" href="index.html">
-                        <img src="images/bhanu-light.png" alt="" class="img-fluid logo-light"> 
-                        <img src="images/bhanu-dark.png" alt="" class="img-fluid logo-dark">
-                    </a>
+                    <img src="images/bhanu-light.png" alt="" class="img-fluid logo-light"> 
+                    <img src="images/bhanu-dark.png" alt="" class="img-fluid logo-dark">
+                </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="mdi mdi-menu"></i>
-                    </button>
+                    <i class="mdi mdi-menu"></i>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
@@ -124,112 +124,358 @@
                             <h3 class="mb-3">Last Updated on <span class="font-weight-bold text-custom" data-aos="fade-up">22:45, March 25.</span></h3>
                             <p class="text-muted mx-auto mt-2">You can get all the information regarding active cases of coronavirus state wise. I am updating information  as provided by "Health Ministry of India" on this page on every 3 hour. Share along with your friends and family to get updated informaion. </p>
                         </div>
-                        <h3 class="mb-3">(C)Confirmed <span class="font-weight-bold text-custom" data-aos="fade-up">645</span> +74 Today</h3>
-                        <h3 class="mb-3">(A)Active <span class="font-weight-bold text-custom" data-aos="fade-up">591</span> +70 Today</h3>
-                        <h3 class="mb-3">(R)Recovered <span class="font-weight-bold text-custom" data-aos="fade-up">43</span> +3 Today</h3>
-                        <h3 class="mb-3">(D)Decreased <span class="font-weight-bold text-custom" data-aos="fade-up">11</span> +1 Today</h3>
                     </div>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-lg-6">
-                        <p class="mb-0 font-weight-bold">State wise data</p>
-                        <div class="progress-bars skill-custom" data-aos="fade-up">
 
+                <hr class="mt-4">
+
+                <div>
+                    <h3 class="mb-0 font-weight-bold mb-4">All India data</h3>
+                    <div class="mb-2">
+                        <h5>(C)Confirmed <span class="font-weight-bold text-custom" data-aos="fade-up">645</span> +74 Today</h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-2">
+                        <h5>(A)Active <span class="font-weight-bold text-custom" data-aos="fade-up">591</span> +70 Today</h5>
+                        <div class="progress ">
+                            <div class="progress-bar " role="progressbar" style="width: 91%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-2">
+                        <h5>(R)Recovered <span class="font-weight-bold text-custom" data-aos="fade-up">43</span> +3 Today</h5>
+                        <div class="progress ">
+                            <div class="progress-bar " role="progressbar" style="width: 7%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-2">
+                        <h5>(D)Deceased <span class="font-weight-bold text-custom" data-aos="fade-up">11</span> +1 Today</h5>
+                        <div class="progress ">
+                            <div class="progress-bar " role="progressbar" style="width: 2%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr class="mt-4">
+                <h3 class=" font-weight-bold mt-4 mb-4">State wise data</h3>
+                <div class="row ">
+
+                    <div class="col-lg-6">
+
+                        <div class="progress-bars skill-custom" data-aos="fade-up">
+                            <!-- MH START -->
                             <div class="clearfix">
                                 <div class="text-dark font-weight-bold float-left">Maharashtra</div>
-                                <div class="text-muted float-right">C-122,A-119,R-1,D-2</div>
+                                <div class="text-muted float-right">Confirmed- 122</div>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 97%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="125"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Active- 119</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 94%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Recovered- 1</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 2%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Deceased- 2</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 4%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <hr class="mt-4">
+                            <!-- MH END -->
 
+                            <!-- KA START -->
                             <div class="clearfix">
                                 <div class="text-dark font-weight-bold float-left">Karnataka</div>
-                                <div class="text-muted float-right">C-51,A-47,R-3,D-1</div>
+                                <div class="text-muted float-right">Confirmed- 51</div>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="125"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Active- 47</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Recovered- 3</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 11%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Deceased- 1</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 4%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <hr class="mt-4">
+                            <!-- KA END -->
 
+
+                            <!-- GU START -->
                             <div class="clearfix">
                                 <div class="text-dark font-weight-bold float-left">Gujrat</div>
-                                <div class="text-muted float-right">C-38,A-37,R-0,D-1</div>
+                                <div class="text-muted float-right">Confirmed- 38</div>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 42%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="125"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Active- 37</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Recovered- 0</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Deceased- 1</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <hr class="mt-4">
+                            <!-- GU END -->
 
+                            <!-- RJ START -->
                             <div class="clearfix">
                                 <div class="text-dark font-weight-bold float-left">Rajasthan</div>
-                                <div class="text-muted float-right">C-36,A-33,R-3,D-0</div>
+                                <div class="text-muted float-right">Confirmed- 36</div>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 39%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="125"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Active- 33</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 92%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Recovered- 3</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 8%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Deceased- 0</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <hr class="mt-4">
+                            <!-- RJ END -->
 
-
-
-
-
-
-
-
-
-
+                            <!-- HR START -->
+                            <div class="clearfix">
+                                <div class="text-dark font-weight-bold float-left">Haryana</div>
+                                <div class="text-muted float-right">Confirmed- 31</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Active- 20</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Recovered- 11</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Deceased- 0</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <hr class="mt-4">
+                            <!-- HR END -->
                             
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="progress-bars skill-custom" data-aos="fade-up">
 
-                        	<div class="clearfix">
+
+                            <!-- KE START -->
+                            <div class="clearfix">
                                 <div class="text-dark font-weight-bold float-left">Kerala</div>
-                                <div class="text-muted float-right">C-118,A-114,R-4,D-0</div>
+                                <div class="text-muted float-right">Confirmed- 118</div>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 94%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="125"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Active- 114</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Recovered- 4</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Deceased- 0</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <hr class="mt-4">
+                            <!-- KE END -->
 
+                            <!-- TE START -->
                             <div class="clearfix">
                                 <div class="text-dark font-weight-bold float-left">Telangana</div>
-                                <div class="text-muted float-right">C-39,A-38,R-1,D-0</div>
+                                <div class="text-muted float-right">Confirmed- 39</div>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="125"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Active- 38</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 96%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Recovered- 1</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 4%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Deceased- 0</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <hr class="mt-4">
+                            <!-- TE END -->
 
+
+                            <!-- UP START -->
                             <div class="clearfix">
                                 <div class="text-dark font-weight-bold float-left">Uttar Pradesh</div>
-                                <div class="text-muted float-right">C-38,A-27,R-11,D-0</div>
+                                <div class="text-muted float-right">Confirmed- 38</div>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="125"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Active- 27</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Recovered- 11</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Deceased- 0</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <hr class="mt-4">
+                            <!-- UP END -->
 
-                             <div class="clearfix">
+                            <!-- DL START -->
+                            <div class="clearfix">
                                 <div class="text-dark font-weight-bold float-left">Delhi</div>
-                                <div class="text-muted float-right">C-35,A-28,R-6,D-1</div>
+                                <div class="text-muted float-right">Confirmed- 35</div>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 37%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="125"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Active- 28</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Recovered- 6</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Deceased- 1</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 3%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <hr class="mt-4">
+                            <!-- DL END -->
 
-
-
-
-
-
-
-
+                            <!-- PU START -->
+                            <div class="clearfix">
+                                <div class="text-dark font-weight-bold float-left">Punjab</div>
+                                <div class="text-muted float-right">Confirmed- 31</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Active- 30</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Recovered- 0</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-muted float-right">Deceased- 1</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <hr class="mt-4">
+                            <!-- PU END -->
 
 
                             
                         </div>
                     </div>
                 </div>
+                <hr class="mt-4">
             </div>
         </section>
-   
+
+
+
 
 
         <!-- CONTACT FORM START-->
@@ -370,7 +616,7 @@
         <!--CUSTOM JS-->
         <script src="js/custom.js"></script>
         <script>
-            
+
             AOS.init({
                 easing: 'ease-in-out-sine',
                 duration: 1000
@@ -388,8 +634,8 @@
         </script>
     </body>
 
-<!-- Mirrored from themesboss.com/elvish/index_17.html by HTTrack Website Copier/3.x [XR&CO'2017], Fri, 06 Mar 2020 16:54:07 GMT -->
-</html>
+    <!-- Mirrored from themesboss.com/elvish/index_17.html by HTTrack Website Copier/3.x [XR&CO'2017], Fri, 06 Mar 2020 16:54:07 GMT -->
+    </html>
 
 </body>
 </html>
