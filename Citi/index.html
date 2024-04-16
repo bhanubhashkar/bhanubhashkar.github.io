@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description"
+        content="A near realtime dashboard showing progress of NAM performance testing and engrineering." />
+    <meta name="author" content="Bhanu Bhashkar" />
+
+    <title>CiTi - NAM Perf Engineering Status</title>
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet" />
+    <!-- Above CSS to be added. -->
+
+    <style>
+		#myChart {
+			min-height: 300px!important;
+		}
+	</style>
+
+
+</head>
+
+<body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper" class="m-1">
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <img height="60" class="img-profile ml-1 p-1" src="img/citi.png" />
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <h4 class="h5">NAM Performance Engineering </h4>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End of Topbar -->
+
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h4 mb-0 text-primary">
+                            Performance Engineering Release Status - April
+                        </h1>
+                        <button href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"> Generate Report</button>
+                    </div>
+
+                    <!-- Content Row Section 1 -->
+                    <div class="row">
+                        <!-- Section 1 -->
+                        <div class="col-xl-12">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        Overall Progress:
+                                    </h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <!-- Overall Status row -->
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <!-- Target -->
+                                        <div class="col  mb-4">
+                                            <div class="card border-left-info shadow h-100 py-2">
+                                                <div class="card-body">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col mr-2">
+                                                            <div
+                                                                class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                                                Target :
+                                                            </div>
+                                                            <div class="row no-gutters align-items-center">
+                                                                <div class="col-auto">
+                                                                    <div
+                                                                        class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
+                                                                        100%
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="progress" role="progressbar"
+                                                                        aria-label="Success example" aria-valuenow="100"
+                                                                        aria-valuemin="0" aria-valuemax="100">
+                                                                        <div class="progress-bar bg-info"
+                                                                            style="width: 100%">100%</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Target -->
+                                        <div class="col mb-4">
+                                            <div class="card border-left-primary shadow h-100 py-2">
+                                                <div class="card-body">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col mr-2">
+                                                            <div
+                                                                class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                                Planned :
+                                                            </div>
+                                                            <div class="row no-gutters align-items-center">
+                                                                <div class="col-auto">
+                                                                    <div
+                                                                        class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
+                                                                        75%</div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="progress progress-sm mr-2">
+                                                                        <div class="progress-bar bg-primary"
+                                                                            role="progressbar" style="width: 75%"
+                                                                            aria-valuenow="75" aria-valuemin="0"
+                                                                            aria-valuemax="100"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Achieved -->
+                                        <div class="col mb-4">
+                                            <div class="card border-left-success shadow h-100 py-2">
+                                                <div class="card-body">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col mr-2">
+                                                            <div
+                                                                class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                                Achieved :
+                                                            </div>
+                                                            <div class="row no-gutters align-items-center">
+                                                                <div class="col-auto">
+                                                                    <div
+                                                                        class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
+                                                                        70%
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="progress progress-sm mr-2">
+                                                                        <div class="progress-bar bg-success"
+                                                                            role="progressbar" style="width: 70%"
+                                                                            aria-valuenow="70" aria-valuemin="0"
+                                                                            aria-valuemax="100"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        </div>
+
+                                        <div class="col-md-5">
+                                            <div>
+                                                <canvas id="myChart"></canvas>
+                                              </div>
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Content Row Section 2-->
+
+                    <div class="row">
+                        <!-- part 1 -->
+                        <div class="col-xl-4 col-md-12">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        USPB Technology:
+                                    </h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="mb-1 small">Planned :</div>
+                                    <div class="progress mb-3" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                                            style="width: 75%">75%</div>
+                                    </div>
+
+                                    <div class="mb-1 small">Achieved :</div>
+                                    <div class="progress mb-3" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                            style="width: 60%">60%</div>
+                                    </div>
+
+                                    <div class=" row text-center mt-4">
+                                        <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-primary shadow-sm">Planned :
+                                            75%</button>
+                                        </div>
+                                        <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-danger shadow-sm">Achieved:
+                                            60%</button>
+                                        </div>
+                                        <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-danger shadow-sm">Backlog :
+                                            15%</button>
+                                        </div>
+
+                                    </div>
+
+                                    <hr class="mb-2">
+
+                                    <div class="row text-center">
+                                        <div class="col-sm-4 mt-3">
+                                            <button class="btn btn-block btn-sm btn-success shadow-sm">CBOL</button>
+                                        </div>
+                                        <div class="col-sm-4 mt-3">
+                                            <button class="btn btn-block btn-sm btn-warning shadow-sm">MBOL</button>
+                                        </div>
+                                        <div class="col-sm-4 mt-3">
+                                            <button class="btn btn-block btn-sm btn-success shadow-sm">FUSION</button>
+                                        </div>
+
+                                        <div class="col-sm-4 mt-3">
+                                            <button class="btn btn-block btn-sm btn-warning shadow-sm">FINTECH</button>
+                                        </div>
+                                        <div class="col-sm-4 mt-3">
+                                            <button class="btn btn-block btn-sm btn-success shadow-sm">CI</button>
+                                        </div>
+                                        <div class="col-sm-4 mt-3">
+                                            <button class="btn btn-block btn-sm btn-danger shadow-sm">EFD</button>
+                                        </div>
+
+                                        <div class="col-sm-4 mt-3">
+                                            <button class="btn btn-block btn-sm btn-warning shadow-sm">B. CARDS</button>
+                                        </div>
+                                        <div class="col-sm-4 mt-3">
+                                            <button class="btn btn-block btn-sm btn-success shadow-sm">APPLY &
+                                                BUY</button>
+                                        </div>
+                                        <div class="col-sm-4 mt-3">
+                                            <button class="btn btn-block btn-sm btn-danger shadow-sm">OPEN
+                                                BANKNG</button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-md-12 mb-4">
+                            <div class="card shadow pb-3">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        Operations & Technology:
+                                    </h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="mb-1 small">Planned :</div>
+                                    <div class="progress mb-3" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                                            style="width: 75%">75%</div>
+                                    </div>
+
+                                    <div class="mb-1 small">Achieved :</div>
+                                    <div class="progress mb-3" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                            style="width: 65%">65%</div>
+                                    </div>
+
+                                    <div class="row text-center mt-4">
+                                        <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-primary shadow-sm">Planned :
+                                            75%</button>
+                                        </div>
+                                        <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-warning shadow-sm">Achieved:
+                                            65%</button>
+                                        </div>
+                                        <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-danger shadow-sm">Backlog :
+                                            10%</button>
+                                        </div>
+                                    </div>
+
+                                    <hr class="mb-2">
+
+                                    <div class="row text-center mb-3">
+
+                                        <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-warning shadow-sm">
+                                            SAWGRASS</button>
+                                        </div>
+                                        <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-success shadow-sm">UCD</button>
+                                        </div>
+                                        <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-success shadow-sm">
+                                            ECLIPSE</button>
+                                        </div>
+
+                                        <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-danger shadow-sm">AVOKA</button>
+                                        </div>
+                                        <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-success shadow-sm">GTM</button>
+                                        </div>
+                                        <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-success shadow-sm">
+                                            OLYMPUS</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-md-12 mb-4">
+                            <div class="card shadow pb-5">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        USPB Technology:
+                                    </h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body mb-4">
+                                    <div class="mb-1 small">Planned :</div>
+                                    <div class="progress mb-3" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 75%">75%</div>
+                                    </div>
+
+                                    <div class="mb-1 small">Achieved :</div>
+                                    <div class="progress mb-3" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 75%">75%</div>
+                                    </div>
+
+                                    <div class="row text-center mt-4">
+                                        <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-primary shadow-sm">Planned :
+                                            75%</button>
+                                        </div>
+                                        <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-warning shadow-sm">Achieved:
+                                            75%</button>
+                                        </div>
+                                        <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-danger shadow-sm">Backlog :
+                                            0%</button>
+                                        </div>
+                                    </div> 
+
+                                    <hr class="mb-2">
+                                    <div class="row text-center mb-3">
+
+                                    <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-success shadow-sm">CMR</button>
+                                    </div>
+                                    <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-success shadow-sm">
+                                        EVENTHUB</button>
+                                    </div>
+                                    <div class="col-sm-4 md-mt-3 mt-4"">
+                                            <button class=" btn btn-block btn-sm btn-success shadow-sm">RTT</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Row -->
+                <div class="row">
+                    <!-- Content Column -->
+                    <div class="col-lg-6 mb-4">
+                        <!-- Project Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Other Ongoing Actiity :</h6>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="small font-weight-bold">
+                                    Server Migration <span class="float-right">20%</span>
+                                </h4>
+                                <div class="progress mb-4">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
+                                        aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h4 class="small font-weight-bold">
+                                    Platform Upgrade <span class="float-right">40%</span>
+                                </h4>
+                                <div class="progress mb-4">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
+                                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h4 class="small font-weight-bold">
+                                    Database Patching <span class="float-right">60%</span>
+                                </h4>
+                                <div class="progress mb-4">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                        <!-- Project Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Chart :</h6>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <canvas id="myChart"></canvas>
+                                  </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Copyright &copy; <a href="https://about.me/bhanubhashkar" target="_blank">Bhanu Bhashkar</a> 2024</span>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+    </div>
+    <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
+
+    <!-- Custom scripts for all pages-->
+    <!-- <script src="js/sb-admin-2.min.js"></script> -->
+
+    <script>
+
+        const beforeInit = {
+            id: "beforeInit",
+            beforeInit: (chart) => {
+                const dataset = chart.data.datasets[0];
+                chart.data.labels = [dataset.label];
+                dataset.data = [dataset.data[0], 100 - dataset.data[0]];
+                
+                const dataset1 = chart.data.datasets[1];
+                chart.data.labels = [dataset1.label];
+                dataset1.data = [dataset1.data[0], 100 - dataset1.data[0]];
+                
+                const dataset2 = chart.data.datasets[2];
+                chart.data.labels = [dataset2.label];
+                dataset2.data = [dataset2.data[0], 100 - dataset2.data[0]];
+            }
+        }
+        
+        const beforeDraw = {
+            id: "beforeDraw",
+            beforeDraw: (chart) => {
+                var width = chart.chart.width, height = chart.chart.height, ctx = chart.chart.ctx;
+                ctx.restore();
+                var fontSize = (height / 300).toFixed(2);
+                ctx.font = fontSize + "em sans-serif";
+                
+                ctx.textBaseline = "middle";
+                
+                var text = chart.data.datasets[0].data[0] + "%",
+                  textX = Math.round((width - ctx.measureText(text).width) / 2),
+                  textY = (height / 2) - 20;
+                  
+                var text1 = chart.data.datasets[1].data[0] + "%",
+                  text1X = Math.round((width - ctx.measureText(text1).width) / 2),
+                  text1Y = (height / 2);	
+                  
+                var text2 = chart.data.datasets[2].data[0] + "%",
+                  text2X = Math.round((width - ctx.measureText(text2).width) / 2),
+                  text2Y = (height / 2) + 20;	
+                  
+                ctx.fillStyle = "red";
+                ctx.fillText(text, textX, textY);
+                
+                ctx.fillStyle = "green";
+                ctx.fillText(text1, text1X, text1Y);
+                
+                ctx.fillStyle = "blue";
+                ctx.fillText(text2, text2X, text2Y);
+                ctx.save();
+            }
+        }
+            
+        var config = {
+          type: 'doughnut',
+          data: {
+            datasets: [{
+              data: [70],
+              backgroundColor: ["red"],
+              label: 'Doughnut 1'
+            },{
+              data: [75],
+              backgroundColor: ["green"],
+              label: 'Doughnut 2'
+            },{
+              data: [100],
+              backgroundColor: ["blue"],
+              label: 'Doughnut 3'
+            }],    
+          },
+          plugins: [beforeInit, beforeDraw],
+          options: {
+            maintainAspectRatio: false,
+            cutoutPercentage: 80,
+            rotation: Math.PI / 2,
+            legend: {
+              display: false,
+            },
+            tooltips: {
+              filter: tooltipItem => tooltipItem.index == 0
+            }
+          }
+        };
+        
+        /*var myChartCircle = new Chart('chartProgress', {
+          type: 'doughnut',
+          data: {
+            datasets: [{
+              label: 'Africa / Population (millions)',
+              percent: 68,
+              backgroundColor: ['#5283ff']
+            }]
+          },
+          plugins: [{
+              beforeInit: (chart) => {
+                const dataset = chart.data.datasets[0];
+                chart.data.labels = [dataset.label];
+                dataset.data = [dataset.percent, 100 - dataset.percent];
+              }
+            },
+            {
+              beforeDraw: (chart) => {
+                var width = chart.chart.width,
+                  height = chart.chart.height,
+                  ctx = chart.chart.ctx;
+                ctx.restore();
+                var fontSize = (height / 150).toFixed(2);
+                ctx.font = fontSize + "em sans-serif";
+                ctx.fillStyle = "#9b9b9b";
+                ctx.textBaseline = "middle";
+                var text = chart.data.datasets[0].percent + "%",
+                  textX = Math.round((width - ctx.measureText(text).width) / 2),
+                  textY = height / 2;
+                ctx.fillText(text, textX, textY);
+                ctx.save();
+              }
+            }
+          ],
+          options: {
+            maintainAspectRatio: false,
+            cutoutPercentage: 85,
+            rotation: Math.PI / 2,
+            legend: {
+              display: false,
+            },
+            tooltips: {
+              filter: tooltipItem => tooltipItem.index == 0
+            }
+          }
+        });*/
+        
+        
+        window.onload = function() {
+          var ctx = document.getElementById("myChart")
+            .getContext("2d");
+          window.myDoughnut = new Chart(ctx, config);
+        };
+        </script>
+
+</body>
+
+</html>
